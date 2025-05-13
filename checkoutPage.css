@@ -1,0 +1,202 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .checkout-container {
+      background: #fff;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .option-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: left;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .option-box input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .option-box .discount {
+      position: absolute;
+      top: 33px;
+      right: 15px;
+      background: #e0ffe0;
+      color: black;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .option-box .popular {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: rgb(52, 155, 69);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+    .details {
+      margin-left: 25px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .expand-section {
+  display: none;
+ margin-top: 0px;
+    margin-left: 26px;
+}
+
+.sizeChartBtn {
+    width: 61px;
+    height: 22px;
+    padding: 0px 2px;
+    font-size: 10px;
+    background-color: #2f9817;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+    .shipping-total {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+    hr{
+        width:10px;
+        margin-top:10px;
+    }
+    .line-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .line-heading::before,
+  .line-heading::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid rgb(211, 198, 198);
+  }
+
+  .line-heading::before {
+    margin-right: 10px;
+  }
+
+  .line-heading::after {
+    margin-left: 10px;
+  }
+
+  .line-heading span {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Table Styling inside the Modal */
+    .modal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .modal-content th, 
+    .modal-content td {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .modal-content th {
+      background-color: #f2f2f2;
+    }
+
+    /* Basic Modal and Close Button Styling */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .close {
+      color: white;
+      background-color: #f44336;
+      border: none;
+      padding: 5px;
+      text-align: right;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+ /* Header Styling inside the modal */
+.modal-content h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  padding-bottom: 10px; /* Add some space between header and the line */
+  border-bottom: 2px solid #ccc; /* Horizontal line below the header */
+}
+.chart-button{
+    margin-left: 83%;
+    margin-bottom: -8%;
+}
+input[type="radio"]:checked + .details + .expand-section {
+  display: block;
+}
+.no-bold{
+  font-weight: normal;
+}

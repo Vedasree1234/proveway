@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="checkoutPage.css" />
+</head>
+<body>
+
+<div class="checkout-container">
+    <div class="line-heading">
+        <span style="color: #169433;">Bundle & Save</span>
+      </div>
+
+  <div class="option-box">
+    <label>
+      <input type="radio" name="product" value="1" data-price="50" data-discount="10">
+      <div class="details">
+        <div>1 Pair</div>
+        <div class="price">$50.00</div>
+      </div>
+      <span class="discount">50% OFF</span>
+    </label>
+    <div class="expand-section">
+        <div class="chart-button"><button class="sizeChartBtn">Size Chart</button></div>
+        <table>
+            <tr>
+               <th></th>
+            <th class="no-bold">Size</th>
+            <th class="no-bold">colour</th>
+        </tr>
+          <tbody class="pair-options">
+            <tr>
+            <td>
+                <select><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+                </select></td>
+                <td>
+            <select>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="brown">Brown</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="teal">Teal</option>
+                <option value="navy">Navy</option>
+              </select>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="option-box">
+    <label>
+      <input type="radio" name="product" value="2" data-price="90" data-discount="15">
+      <div class="details">
+        <div>2 Pair</div>
+        <div class="price">$90.00</div>
+      </div>
+      <span class="popular">Most Popular</span>
+      <span class="discount">40% OFF</span>
+    </label>
+    <div class="expand-section">
+        <div class="chart-button"><button class="sizeChartBtn">Size Chart</button></div>
+        <table>
+            <tr>
+              <th></th>
+            <th class="no-bold">Size</th>
+            <th class="no-bold">colour</th>
+        </tr>
+          <tbody class="pair-options">
+            <tr>
+            <td>
+                <select><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+                </select></td>
+                <td>
+            <select>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="brown">Brown</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="teal">Teal</option>
+                <option value="navy">Navy</option>
+              </select>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="option-box">
+    <label>
+      <input type="radio" name="product" value="3" data-price="120" data-discount="20">
+      <div class="details">
+        <div>3 Pair</div>
+        <div class="price">$120.00</div>
+      </div>
+      <span class="discount">60% OFF</span>
+    </label>
+    <div class="expand-section">
+        <div class="chart-button"><button class="sizeChartBtn">Size Chart</button></div>
+        <table>
+            <tr>
+              <th></th>
+            <th class="no-bold">Size</th>
+            <th class="no-bold">colour</th>
+        </tr>
+          <tbody class="pair-options">
+            <tr>
+            <td>
+                <select><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+                </select></td>
+                <td>
+            <select>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="brown">Brown</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="teal">Teal</option>
+                <option value="navy">Navy</option>
+              </select>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="shipping-total">
+    <div><span style="color: #28a745;">Free 2-Day Shipping </span></div>
+    <div>Total: $<span id="total">0.00</span></div>
+  </div>
+
+  <button>Add to Cart</button>
+  <p style="text-align: right; margin-top: 10px; font-size: 14px;">
+    &copy; Powered by Pumper
+  </p>
+</div>
+<div id="sizeChartModal" class="modal">
+    <div class="modal-content">
+        <h3>
+            Size Chart
+            <span class="close" id="closeModalBtn">&times;</span>
+          </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Chest (in)</th>
+            <th>Waist (in)</th>
+            <th>Hip (in)</th>
+            <th>Length (in)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>34-36</td>
+            <td>28-30</td>
+            <td>36-38</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>38-40</td>
+            <td>32-34</td>
+            <td>40-42</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>42-44</td>
+            <td>36-38</td>
+            <td>44-46</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>46-48</td>
+            <td>40-42</td>
+            <td>48-50</td>
+            <td>34</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="checkoutPage.js"></script>
+</body>
+</html>
